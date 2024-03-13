@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Penjadwalan Pertemuan</title>
+    <style>
+        table {
+            width: 35%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 0px solid #f2f2f2;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <h2 style="color :blue"; >Form penjadwalan Pertemuan</h2>
+        </body>
+    <h3>Informasi Pribadi</h3>
+    <form action="./hasil_form.php" target="_blank" method="post">
+        <table>
+            <tr>
+                <th>Nama</th>
+                <td><input type="text" id="nama" name="nama" required></td>
+            </tr>
+            <tr>
+                <th>No. Telepon</th>
+                <td><input type="tel" id="no_telepon" name="no_telepon" required></td>
+            </tr>
+            <tr>
+                <th>Alamat Email</th>
+                <td><input type="email" id="email" name="email" required></td>
+            </tr>
+            <tr>
+                <th>Tanggal Lahir</th>
+                <td><input type="date" id="tanggal_lahir" name="tanggal_lahir" required></td>
+            </tr>
+        </table>
+    <h3>Permintaan Pertemuan</h3>
+        <table>
+            <tr>
+                <th>Tujuan Pertemuan</th>
+                <td><textarea id="tujuan_pertemuan" name="tujuan_pertemuan" rows="4" cols="50" required></textarea></td>
+            </tr>
+            <tr>
+                <th>Tingkat Kepentingan Pertemuan</th>
+                <td><input type="range" id="tingkat_kepentingan" name="tingkat_kepentingan" min="0" max="10" required></td>
+            </tr>
+            <tr>
+                <th>Tanggal</th>
+                <td><input type="date" id="tanggal_pertemuan" name="tanggal_pertemuan" required></td>
+            </tr>
+            <tr>
+                <th>Waktu</th>
+                <td><input type="time" id="waktu_pertemuan" name="waktu_pertemuan" required></td>
+            </tr>
+        </table>
+        <br>
+        <input type="submit" value="submit">
+    </form>
+</body>
+</html>
